@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo">
+                <div class="logo-icon">W</div>
+                <div class="logo-text">Workspace</div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="home.html" class="menu-item">
+                <img src="home-icon.jpg" alt="Home" class="icon"> Home
+            </a>
+            <a href="customer.html" class="menu-item">
+                <img src="customers-icon.jpeg" alt="Customers" class="icon"> Customers
+            </a>
+            <a href="departments.html" class="menu-item">
+                <img src="departments-icon.jpeg" alt="Departments" class="icon"> Departments
+            </a>
+            <a href="media.html" class="menu-item">
+                <img src="media-icon.jpg" alt="Media" class="icon"> Media
+            </a>
+        </div>
+        <a href="account.html" class="menu-item account active">
+            <img src="account-icon.jpg" alt="My Account" class="icon"> My Account
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="nav-bar">
+            <input type="text" placeholder="Search in Customers">
+            <button>🔍</button>
+        </div><br><br><br>
+        <div class="account-info">
+            <div class="account-image">
+                <div class="image-container">
+                    <img src="account-icon.jpg" alt="Account Image">
+                    <button class="edit-button" title="Edit Image"><img src="edit-icon.png" alt="Edit"></button>
+                </div>
+                <p>This is an edit button. On clicking this pencil symbol, user will be asked to input an image type</p>
+            </div>
+            <div class="account-details">
+                <div class="detail-item">
+                    <label>Name</label>
+                    <input type="text" value="John Doe">
+                    <button class="edit-button" title="Edit Name"><img src="edit-icon.png" alt="Edit"></button><p>This is an edit button.<br>
+                        On clicking this pencil symbol,<br>
+                        user will be<br>
+                        asked to change<br>
+                        his name with input</p>
+                </div>
+                <div class="detail-item">
+                    <label>Email</label>
+                    <input type="email" value="example@gmail.com">
+                    <button class="edit-button" title="Edit Email"><img src="edit-icon.png" alt="Edit"></button>
+                    <p>This is an edit button.<br>
+                        On clicking this pencil symbol,<br>
+                        user will be<br>
+                        asked to change<br>
+                        his email with input</p>
+                </div>
+                <div class="detail-item">
+                    <label>Phone Number</label>
+                    <input type="tel" value="9134837948">
+                    <button class="edit-button" title="Edit Phone Number"><img src="edit-icon.png" alt="Edit"></button>
+                    <p>This is an edit button.<br>
+                        On clicking this pencil symbol,<br>
+                        user will be<br>
+                        asked to change<br>
+                        his Phone no with input</p>
+
+                </div>
+                <div class="detail-item">
+                    <label>Date Of Birth</label>
+                    <input type="date" value="1999-07-16">
+                    <button class="edit-button" title="Edit Date of Birth"><img src="edit-icon.png" alt="Edit"></button>
+                    <p>This is an edit button.<br>
+                        On clicking this pencil symbol,<br>
+                        user will be<br>
+                        asked to change<br>
+                        his dob with input</p>
+                </div>
+                <div class="action-buttons">
+                    <button class="save-button">Save</button>
+                    <button class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
