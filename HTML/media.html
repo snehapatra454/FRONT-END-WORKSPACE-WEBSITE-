@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo">
+                <div class="logo-icon">W</div>
+                <div class="logo-text">Workspace</div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="home.html" class="menu-item">
+                <img src="home-icon.jpg" alt="Home" class="icon"> Home
+            </a>
+            <a href="customer.html" class="menu-item">
+                <img src="customers-icon.jpeg" alt="Customers" class="icon"> Customers
+            </a>
+            <a href="departments.html" class="menu-item">
+                <img src="departments-icon.jpeg" alt="Departments" class="icon"> Departments
+            </a>
+            <a href="media.html" class="menu-item active">
+                <img src="media-icon.jpg" alt="Media" class="icon"> Media
+            </a>
+        </div>
+        <a href="account.html" class="menu-item account">
+            <img src="account-icon.jpg" alt="My Account" class="icon"> My Account
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="nav-bar">
+            <input type="text" placeholder="Search in Media">
+            <button>🔍</button>
+        </div><br><br><br>
+        <div class="media-section">
+            <div class="media-category">
+                <h2>Images</h2>
+                <div class="media-grid">
+                    <div class="media-item"><img src="image1.jpg" alt="Media"></div>
+                    <div class="media-item"><img src="image2.jpeg" alt="Media"></div>
+                    <div class="media-item"><img src="image3.jpeg" alt="Media"></div>
+                    <div class="media-item"><img src="image4.jpeg" alt="Media"></div>
+                    <div class="media-item"><img src="image5.jpeg" alt="Media"></div>
+                    <div class="media-item"><img src="image6.jpg" alt="Media"></div>
+                </div>
+            </div>
+            <div class="media-category">
+                <h2>Video</h2>
+                <div class="media-grid">
+                    <div class="media-item"><iframe width="150" height="200" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="media-item"><iframe width="150" height="200" src="https://www.youtube.com/embed/ESnrn1kAD4E" title="CSS Tutorial for Beginners | Complete CSS with Project, Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="media-item"><iframe width="150" height="200" src="https://www.youtube.com/embed/VlPiVmYuoqw" title="JavaScript Tutorial (2024) for Beginners to Pro (with Notes, Projects &amp; Practice Questions)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="media-item"><iframe width="150" height="200" src="https://www.youtube.com/embed/eILUmCJhl64" title="🚀🔥 React &amp; Redux Complete Course (2024) with Projects | Notes | Free Certification" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
+            </div>
+            <div class="media-category">
+                <h2>Audio</h2>
+                <div class="media-grid">
+                    <audio class = "audio-spacing" controls>
+                        <source src = "audio1.mp3" type = "audio/mpeg">
+                    </audio><br>
+                    <audio class = "audio-spacing" controls>
+                        <source src = "audio2.mp3" type = "audio/mpeg">
+                    </audio><br>
+                    <audio class = "audio-spacing" controls>
+                        <source src = "audio3.mp3" type = "audio/mpeg">
+                    </audio><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

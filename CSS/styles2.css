@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #d3b8ce;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #c085b6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #ffff;
+    font-size: 40px;
+}
+
+.logo span {
+    color: #b64e95;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e4cce1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu-item img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.menu-item.active, .menu-item:hover {
+    background-color: #c4a3c4;
+}
+
+/*.account {
+    display: flex;
+    align-items: left;
+    background-color: #e4cce1;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.account img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}*/
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d3b8ce;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+}
+
+.nav-bar input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.nav-bar button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.table-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 70px; /* Adjusted to create space between nav-bar and table */
+}
+
+.customers-table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.customers-table th, .customers-table td {
+    border: 1px solid #50c2d4;
+    padding: 10px;
+    text-align: left;
+}
+
+/*.customers-table th {
+    background-color: #e4cce1;
+}*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f3f3f3;
+}
+
+.pagination button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination span {
+    padding: 10px;
+}
+
+.media-section {
+    margin-top: 20px;
+}
+
+.media-category {
+    margin-bottom: 20px;
+}
+
+.media-category h2 {
+    background-color: #F5DEB3;
+    padding: 10px;
+    margin: 0;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.media-item {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.media-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.account {
+    text-align: center;
+}
+
+.account a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.account-image {
+    text-align: left;
+    flex:1;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.image-container .edit-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.account-image p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.account-details {
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.detail-item label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.detail-item input {
+    flex: 2;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.detail-item p{
+    font-size: 12px;
+}
+.edit-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.edit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.edit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*.save-button, .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}*/
+
+.save-button {
+    background-color: #4CAF50;
+}
+
+.cancel-button {
+    background-color: #F44336;
+}
+
+/*.account-details {
+    flex: 2;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detail-item label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.detail-item input {
+    flex: 2;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}*/
+
+.edit-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.edit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cancel-button {
+    background-color: #F44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom-links {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+}
